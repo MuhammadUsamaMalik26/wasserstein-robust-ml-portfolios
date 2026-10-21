@@ -1,0 +1,40 @@
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{8}{c}{Radius parameter $c$ (ridge: $\lambda = 3c$)} \\
+\cmidrule(lr){2-9}
+ & 0.001 & 0.002 & 0.005 & 0.01 & 0.02 & 0.05 & 0.1 & 0.2 \\
+\midrule
+\multicolumn{9}{l}{\textit{Lasso}} \\
+\quad Ridge: net SR & 0.64 & 0.63 & 0.63 & 0.62 & 0.61 & 0.60 & 0.59 & 0.59 \\
+\quad W-DRO mean-only: net SR & 0.64 & 0.63 & 0.63 & 0.63 & 0.61 & 0.59 & 0.59 & 0.58 \\
+\quad W-DRO-MV fixed: net SR & 0.64 & 0.63 & 0.63 & 0.62 & 0.61 & 0.60 & 0.59 & 0.59 \\
+\quad W-DRO-MV volatility: net SR & 0.64 & 0.63 & 0.63 & 0.63 & 0.62 & 0.61 & 0.60 & 0.59 \\
+\quad W-DRO-MV entropy: net SR & 0.64 & 0.63 & 0.63 & 0.61 & 0.60 & 0.59 & 0.58 & 0.58 \\
+\quad Ridge: turnover & 0.07 & 0.07 & 0.07 & 0.06 & 0.06 & 0.05 & 0.04 & 0.03 \\
+\quad W-DRO-MV fixed: turnover & 0.07 & 0.07 & 0.07 & 0.06 & 0.06 & 0.05 & 0.03 & 0.03 \\
+\quad W-DRO-MV entropy: turnover & 0.07 & 0.07 & 0.07 & 0.07 & 0.09 & 0.09 & 0.07 & 0.06 \\
+\quad Plug-in: net SR 0.65, turnover 0.07 & \multicolumn{8}{l}{} \\
+\addlinespace
+\multicolumn{9}{l}{\textit{Random Forest}} \\
+\quad Ridge: net SR & 0.60 & 0.60 & 0.59 & 0.59 & 0.59 & 0.58 & 0.59 & 0.59 \\
+\quad W-DRO mean-only: net SR & 0.60 & 0.60 & 0.60 & 0.59 & 0.59 & 0.58 & 0.58 & 0.59 \\
+\quad W-DRO-MV fixed: net SR & 0.60 & 0.60 & 0.59 & 0.59 & 0.59 & 0.59 & 0.59 & 0.59 \\
+\quad W-DRO-MV volatility: net SR & 0.60 & 0.60 & 0.59 & 0.59 & 0.59 & 0.59 & 0.60 & 0.60 \\
+\quad W-DRO-MV entropy: net SR & 0.60 & 0.60 & 0.60 & 0.59 & 0.58 & 0.58 & 0.58 & 0.58 \\
+\quad Ridge: turnover & 0.38 & 0.38 & 0.38 & 0.37 & 0.35 & 0.30 & 0.24 & 0.16 \\
+\quad W-DRO-MV fixed: turnover & 0.38 & 0.38 & 0.38 & 0.37 & 0.35 & 0.27 & 0.18 & 0.09 \\
+\quad W-DRO-MV entropy: turnover & 0.38 & 0.38 & 0.38 & 0.37 & 0.36 & 0.30 & 0.21 & 0.13 \\
+\quad Plug-in: net SR 0.59, turnover 0.38 & \multicolumn{8}{l}{} \\
+\addlinespace
+\multicolumn{9}{l}{\textit{Gradient Boosting}} \\
+\quad Ridge: net SR & 0.57 & 0.57 & 0.58 & 0.58 & 0.59 & 0.58 & 0.58 & 0.58 \\
+\quad W-DRO mean-only: net SR & 0.57 & 0.57 & 0.57 & 0.58 & 0.58 & 0.58 & 0.57 & 0.57 \\
+\quad W-DRO-MV fixed: net SR & 0.57 & 0.57 & 0.57 & 0.58 & 0.59 & 0.58 & 0.58 & 0.58 \\
+\quad W-DRO-MV volatility: net SR & 0.57 & 0.57 & 0.57 & 0.58 & 0.59 & 0.57 & 0.58 & 0.59 \\
+\quad W-DRO-MV entropy: net SR & 0.57 & 0.57 & 0.58 & 0.58 & 0.58 & 0.59 & 0.59 & 0.59 \\
+\quad Ridge: turnover & 0.47 & 0.47 & 0.47 & 0.47 & 0.46 & 0.43 & 0.39 & 0.28 \\
+\quad W-DRO-MV fixed: turnover & 0.47 & 0.47 & 0.47 & 0.46 & 0.45 & 0.42 & 0.31 & 0.18 \\
+\quad W-DRO-MV entropy: turnover & 0.47 & 0.47 & 0.47 & 0.47 & 0.46 & 0.42 & 0.34 & 0.22 \\
+\quad Plug-in: net SR 0.57, turnover 0.47 & \multicolumn{8}{l}{} \\
+\bottomrule
+\end{tabular}

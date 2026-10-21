@@ -1,0 +1,28 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{HMM entropy tercile} & \multicolumn{3}{c}{Volatility tercile} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Strategy & Low & Mid & High & Low & Mid & High \\
+\midrule
+1/N & 0.47 & 0.65 & 0.61 & 0.92 & $-$0.08 & 1.14 \\
+GMV & 0.40 & 0.86 & 0.74 & 1.10 & 0.05 & 1.11 \\
+\midrule
+Lasso, plug-in & 0.51 & 0.68 & 0.74 & 1.21 & 0.13 & 0.87 \\
+Lasso, ridge & 0.45 & 0.73 & 0.62 & 1.07 & 0.09 & 0.91 \\
+Lasso, fixed radius & 0.45 & 0.74 & 0.62 & 1.07 & 0.09 & 0.92 \\
+Lasso, volatility radius & 0.46 & 0.70 & 0.66 & 1.09 & 0.07 & 0.93 \\
+Lasso, entropy radius & 0.45 & 0.72 & 0.67 & 1.08 & 0.08 & 0.94 \\
+\midrule
+Random Forest, plug-in & 0.42 & 0.66 & 0.72 & 0.96 & 0.12 & 0.92 \\
+Random Forest, ridge & 0.45 & 0.65 & 0.71 & 0.93 & 0.08 & 0.99 \\
+Random Forest, fixed radius & 0.45 & 0.66 & 0.73 & 0.92 & 0.08 & 1.02 \\
+Random Forest, volatility radius & 0.42 & 0.67 & 0.70 & 0.94 & 0.06 & 1.00 \\
+Random Forest, entropy radius & 0.44 & 0.68 & 0.71 & 0.93 & 0.08 & 1.01 \\
+\midrule
+Gradient Boosting, plug-in & 0.47 & 0.58 & 0.67 & 0.99 & $-$0.03 & 1.02 \\
+Gradient Boosting, ridge & 0.48 & 0.64 & 0.65 & 1.00 & $-$0.04 & 1.05 \\
+Gradient Boosting, fixed radius & 0.49 & 0.64 & 0.64 & 1.02 & $-$0.02 & 1.03 \\
+Gradient Boosting, volatility radius & 0.49 & 0.68 & 0.62 & 1.01 & $-$0.02 & 1.04 \\
+Gradient Boosting, entropy radius & 0.49 & 0.64 & 0.64 & 1.03 & $-$0.05 & 1.04 \\
+\bottomrule
+\end{tabular}

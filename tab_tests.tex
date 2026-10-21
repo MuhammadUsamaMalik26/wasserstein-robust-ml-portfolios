@@ -1,0 +1,37 @@
+\begin{tabular}{llrrrr}
+\toprule
+ & & \multicolumn{2}{c}{Net of 10bp} & \multicolumn{2}{c}{Net of 50bp} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+Model & Comparison (A minus B) & $\Delta$SR & $p$-value & $\Delta$SR & $p$-value \\
+\midrule
+Lasso & Plug-in $-$ GMV & $-$0.01 & 0.82 & $-$0.04 & 0.55 \\
+ & Plug-in $-$ 1/N & 0.07 & 0.38 & 0.05 & 0.52 \\
+ & W-DRO-MV fixed $-$ Plug-in & $-$0.04 & 0.34 & $-$0.05 & 0.24 \\
+ & W-DRO mean-only $-$ Ridge & $-$0.00 & 0.21 & $-$0.00 & 0.23 \\
+ & W-DRO-MV fixed $-$ Ridge & 0.00 & 0.82 & 0.00 & 0.84 \\
+ & W-DRO-MV entropy $-$ W-DRO-MV fixed & 0.01 & 0.63 & 0.01 & 0.55 \\
+ & W-DRO-MV entropy $-$ W-DRO-MV volatility & 0.01 & 0.71 & 0.01 & 0.64 \\
+ & W-DRO-MV fixed $-$ GMV & $-$0.06 & 0.35 & $-$0.09 & 0.14 \\
+\midrule
+Random Forest & Plug-in $-$ GMV & $-$0.07 & 0.34 & $-$0.18 & 0.01 \\
+ & Plug-in $-$ 1/N & 0.02 & 0.77 & $-$0.09 & 0.18 \\
+ & W-DRO-MV fixed $-$ Plug-in & 0.01 & 0.78 & 0.03 & 0.36 \\
+ & W-DRO mean-only $-$ Ridge & 0.00 & 0.93 & 0.00 & 0.93 \\
+ & W-DRO-MV fixed $-$ Ridge & 0.01 & 0.54 & 0.01 & 0.14 \\
+ & W-DRO-MV entropy $-$ W-DRO-MV fixed & $-$0.00 & 0.92 & $-$0.01 & 0.63 \\
+ & W-DRO-MV entropy $-$ W-DRO-MV volatility & 0.01 & 0.34 & 0.01 & 0.38 \\
+ & W-DRO-MV fixed $-$ GMV & $-$0.06 & 0.32 & $-$0.15 & 0.01 \\
+\midrule
+Gradient Boosting & Plug-in $-$ GMV & $-$0.09 & 0.24 & $-$0.22 & 0.01 \\
+ & Plug-in $-$ 1/N & $-$0.00 & 0.97 & $-$0.12 & 0.04 \\
+ & W-DRO-MV fixed $-$ Plug-in & 0.01 & 0.66 & 0.04 & 0.19 \\
+ & W-DRO mean-only $-$ Ridge & $-$0.00 & 0.58 & $-$0.00 & 0.60 \\
+ & W-DRO-MV fixed $-$ Ridge & $-$0.00 & 0.96 & 0.01 & 0.45 \\
+ & W-DRO-MV entropy $-$ W-DRO-MV fixed & 0.00 & 0.89 & $-$0.00 & 0.90 \\
+ & W-DRO-MV entropy $-$ W-DRO-MV volatility & $-$0.00 & 0.88 & $-$0.01 & 0.59 \\
+ & W-DRO-MV fixed $-$ GMV & $-$0.08 & 0.26 & $-$0.18 & 0.01 \\
+\midrule
+None & GMV $-$ 1/N & 0.09 & 0.14 & 0.09 & 0.11 \\
+None & Min CVaR $-$ 1/N & 0.05 & 0.44 & 0.04 & 0.57 \\
+\bottomrule
+\end{tabular}
